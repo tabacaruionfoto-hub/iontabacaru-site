@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: ro
+
+media_folder: "photos"
+public_folder: "/photos"
+
+collections:
+  - name: "gallery"
+    label: "Galerie foto"
+    files:
+      - label: "Fotografii"
+        name: "photos"
+        file: "data/gallery.json"
+        fields:
+          - label: "Lista fotografii"
+            name: "photos"
+            widget: "list"
+            label_singular: "Fotografie"
+            summary: "{{fields.alt}} ({{fields.category}})"
+            fields:
+              - label: "Imaginea"
+                name: "image"
+                widget: "image"
+                hint: "Trage poza sau apasă pentru a o selecta"
+
+              - label: "Categorie"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Nuntă",              value: "nunta"   }
+                  - { label: "Cuplu & Logodnă",     value: "cuplu"   }
+                  - { label: "Familie & Maternitate", value: "familie" }
+                  - { label: "Portret",             value: "portret" }
+
+              - label: "Descriere scurtă"
+                name: "alt"
+                widget: "string"
+                required: false
+                hint: "ex. Nuntă Ana & Mihai, august 2024"
+
+              - label: "Lățime foto (pixeli)"
+                name: "width"
+                widget: "number"
+                value_type: "int"
+                min: 1
+                hint: "ex. 6000 — folosit pentru aranjarea automată în galerie"
+
+              - label: "Înălțime foto (pixeli)"
+                name: "height"
+                widget: "number"
+                value_type: "int"
+                min: 1
+                hint: "ex. 4000 — folosit pentru aranjarea automată în galerie"

@@ -1,0 +1,60 @@
+{
+  "photos": [
+    {
+      "image": "/photos/nunta/photo1.jpg",
+      "category": "nunta",
+      "alt": "Nuntă Ana & Mihai, Chișinău 2024",
+      "width": 4000,
+      "height": 6000
+    },
+    {
+      "image": "/photos/nunta/photo2.jpg",
+      "category": "nunta",
+      "alt": "Ceremonia — primul sărut",
+      "width": 6000,
+      "height": 4000
+    },
+    {
+      "image": "/photos/cuplu/photo1.jpg",
+      "category": "cuplu",
+      "alt": "Sesiune cuplu — parcul central",
+      "width": 4000,
+      "height": 5000
+    },
+    {
+      "image": "/photos/portret/photo1.jpg",
+      "category": "portret",
+      "alt": "Portret — sesiune studio 2024",
+      "width": 3840,
+      "height": 5760
+    },
+    {
+      "image": "/photos/nunta/photo3.jpg",
+      "category": "nunta",
+      "alt": "Primul dans",
+      "width": 7680,
+      "height": 4320
+    },
+    {
+      "image": "/photos/familie/photo1.jpg",
+      "category": "familie",
+      "alt": "Familia Popescu — toamnă 2024",
+      "width": 6000,
+      "height": 4000
+    },
+    {
+      "image": "/photos/cuplu/photo2.jpg",
+      "category": "cuplu",
+      "alt": "Cerere în căsătorie — surpriză",
+      "width": 4000,
+      "height": 6000
+    },
+    {
+      "image": "/photos/familie/photo2.jpg",
+      "category": "familie",
+      "alt": "Sesiune maternitate",
+      "width": 4000,
+      "height": 5000
+    }
+  ]
+}

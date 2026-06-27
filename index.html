@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ion Tabacaru — fotograf de nuntă, cuplu și familie în Chișinău.">
+  <title>Ion Tabacaru · Fotograf Chișinău</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+
+  <!-- Netlify Identity — necesar pentru CMS -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <!-- ── INTRO LOADER ─────────────────────────────────── -->
+  <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
+    <div id="intro-name" class="intro-name">Ion Tabacaru</div>
+    <div class="intro-progress">
+      <div id="intro-bar" class="intro-bar"></div>
+    </div>
+  </div>
+
+  <!-- ── LIGHTBOX ─────────────────────────────────────── -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Fotografie mărită">
+    <button class="lb-btn lb-close" id="lb-close" aria-label="Închide (Esc)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Anterior (←)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Următor (→)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+    <div class="lb-content">
+      <img id="lb-img" src="" alt="">
+      <div class="lb-meta">
+        <span id="lb-caption" class="lb-caption"></span>
+        <span id="lb-counter" class="lb-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NAV ──────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Ion Tabacaru</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#despre">Despre</a></li>
+      <li><a href="#lucrari">Lucrări</a></li>
+      <li><a href="#preturi">Prețuri</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://instagram.com/iontabacaru.fotograf/" class="nav-insta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      @iontabacaru.fotograf
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Deschide meniu">
+      <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="19" y2="6"/>
+        <line x1="3" y1="11" x2="19" y2="11"/>
+        <line x1="3" y1="16" x2="19" y2="16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Fotografie de nuntă &amp; portrete</p>
+      <h1 class="hero-name">Ion Tabacaru</h1>
+      <p class="hero-city">Chișinău, Moldova</p>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><div class="scroll-bar"></div></div>
+  </section>
+
+  <!-- ── DESPRE ────────────────────────────────────────── -->
+  <section class="about" id="despre">
+    <div class="reveal">
+      <p class="eyebrow">Despre mine</p>
+      <blockquote class="about-quote">
+        "Fotografiile sunt ca un buton de pauză pentru momentele efemere ale vieții."
+      </blockquote>
+      <div class="about-body">
+        <p>Nu sunt genul de fotograf care îți spune exact unde să stai sau cum să zâmbești. Cred că cele mai frumoase imagini se nasc din libertate — din mișcare, râs și conexiune autentică.</p>
+        <p>Te voi ghida subtil pe parcurs, dar în rest mă voi face cât mai invizibil posibil, pentru ca tu să fii 100% prezent în momentul tău.</p>
+      </div>
+    </div>
+    <div class="about-photo-wrap reveal" style="transition-delay:.15s;">
+      <!--
+        ★ ÎNLOCUIEȘTE div-ul de mai jos cu:
+        <img src="photos/ion.jpg" alt="Ion Tabacaru" class="about-photo">
+      -->
+      <div class="about-photo"></div>
+      <div class="about-badge">
+        <div class="badge-num">7+</div>
+        <div class="badge-text">ani de fotografii care contează</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALERIE ───────────────────────────────────────── -->
+  <section class="gallery" id="lucrari">
+    <div class="gallery-head reveal">
+      <div>
+        <p class="eyebrow">Portofoliu</p>
+        <h2 class="section-title">Lucrări selectate</h2>
+      </div>
+      <ul class="gallery-filters" role="list">
+        <li><button class="active" data-cat="all">Toate</button></li>
+        <li><button data-cat="nunta">Nuntă</button></li>
+        <li><button data-cat="cuplu">Cuplu</button></li>
+        <li><button data-cat="familie">Familie</button></li>
+        <li><button data-cat="portret">Portret</button></li>
+      </ul>
+    </div>
+
+    <!-- Pozele sunt injectate dinamic de gallery.js din data/gallery.json -->
+    <div class="gallery-grid" id="gallery" aria-label="Galerie foto"></div>
+
+    <div class="gallery-foot reveal">
+      <a href="#contact" class="btn btn-outline">Discutăm despre sesiunea ta</a>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALE ──────────────────────────────────── -->
+  <section class="testimonials">
+    <div class="reveal">
+      <p class="eyebrow">Ce spun clienții</p>
+      <h2 class="section-title">Povești spuse <em>de alții</em></h2>
+    </div>
+    <div class="testi-grid reveal-stagger">
+      <div class="testi">
+        <p class="testi-quote">"Ion a reușit să surprindă exact esența zilei noastre — nu poze aranjate, ci momente reale pe care le vom privi toată viața."</p>
+        <p class="testi-name">Ana &amp; Mihai C.</p>
+        <p class="testi-detail">Nuntă · Chișinău, 2024</p>
+      </div>
+      <div class="testi">
+        <p class="testi-quote">"Eram sigură că voi fi stângace în fața camerei, dar Ion ne-a pus atât de ușor — am uitat complet că era acolo."</p>
+        <p class="testi-name">Cristina M.</p>
+        <p class="testi-detail">Sesiune cuplu · 2024</p>
+      </div>
+      <div class="testi">
+        <p class="testi-quote">"Maternitatea mea a fost documentată cu atâta sensibilitate. Fiecare fotografie are o poveste în ea."</p>
+        <p class="testi-name">Elena P.</p>
+        <p class="testi-detail">Sesiune maternitate · 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PREȚURI ───────────────────────────────────────── -->
+  <section class="pricing" id="preturi">
+    <div class="pricing-head reveal">
+      <div>
+        <p class="eyebrow">Pachete</p>
+        <h2 class="section-title">Prețuri</h2>
+      </div>
+      <p class="pricing-note">Pachetele pot fi personalizate. Scrie-mi pentru o ofertă exactă.</p>
+    </div>
+    <div class="pricing-grid reveal-stagger">
+      <div class="p-card">
+        <p class="p-type">Sesiune simplă</p>
+        <h3 class="p-name">Portret &amp; Cuplu</h3>
+        <p class="p-from">de la</p>
+        <p class="p-price">150 €</p>
+        <ul class="p-list">
+          <li>1–2 ore de fotografiere</li>
+          <li>1 locație</li>
+          <li>40+ fotografii editate</li>
+          <li>Galerie online privată</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Rezervă o dată</a>
+      </div>
+      <div class="p-card featured">
+        <span class="featured-badge">Cel mai ales</span>
+        <p class="p-type">Recomandat</p>
+        <h3 class="p-name">Familie &amp; Maternitate</h3>
+        <p class="p-from">de la</p>
+        <p class="p-price">250 €</p>
+        <ul class="p-list">
+          <li>2–3 ore de fotografiere</li>
+          <li>2 locații</li>
+          <li>80+ fotografii editate</li>
+          <li>Galerie online + USB</li>
+          <li>3 printuri în format A4</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost-light">Rezervă o dată</a>
+      </div>
+      <div class="p-card">
+        <p class="p-type">Eveniment complet</p>
+        <h3 class="p-name">Nuntă</h3>
+        <p class="p-from">de la</p>
+        <p class="p-price">900 €</p>
+        <ul class="p-list">
+          <li>Acoperire 8–12 ore</li>
+          <li>Pregătiri + ceremonie + petrecere</li>
+          <li>400+ fotografii editate</li>
+          <li>Album tipărit inclus</li>
+          <li>Livrare în 30 de zile</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Rezervă o dată</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="reveal">
+      <p class="eyebrow">Hai să ne cunoaștem</p>
+      <h2 class="contact-title">Spune-mi <em>povestea ta</em></h2>
+      <p class="contact-body">Trimite-mi un mesaj cu detalii despre sesiunea ta. Răspund în maximum 24 de ore.</p>
+      <a href="mailto:tabacaruionion@gmail.com" class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        tabacaruionion@gmail.com
+      </a>
+      <a href="https://www.facebook.com/IonTabacaru.fotograf" class="contact-row" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+        IonTabacaru.fotograf
+      </a>
+      <a href="https://instagram.com/iontabacaru.fotograf/" class="contact-row" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        @iontabacaru.fotograf
+      </a>
+    </div>
+
+    <!-- Formular cu Netlify Forms integrat -->
+    <form id="contactForm" class="reveal" name="contact" method="POST"
+          data-netlify="true" data-netlify-honeypot="bot-field"
+          style="transition-delay:.15s;">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="bot-field" style="display:none">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="fname">Prenume</label>
+          <input class="form-input" type="text" id="fname" name="fname" placeholder="Maria" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="lname">Nume</label>
+          <input class="form-input" type="text" id="lname" name="lname" placeholder="Popescu" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="maria@email.com" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="service">Tip sesiune</label>
+        <select class="form-select" id="service" name="service">
+          <option value="">— Alege —</option>
+          <option>Nuntă</option>
+          <option>Cerere în căsătorie</option>
+          <option>Cuplu &amp; Logodnă</option>
+          <option>Familie &amp; Maternitate</option>
+          <option>Portret</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="date">Data aproximativă</label>
+        <input class="form-input" type="text" id="date" name="date" placeholder="ex. august 2025">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="msg">Mesaj</label>
+        <textarea class="form-textarea" id="msg" name="msg" placeholder="Povestește-mi puțin despre sesiunea ta..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark btn-full">Trimite mesajul</button>
+      <p id="formMsg" class="form-success" aria-live="polite">Mesajul a fost trimis. Revin în curând!</p>
+    </form>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────── -->
+  <footer>
+    <span class="footer-logo">Ion Tabacaru</span>
+    <div class="footer-links">
+      <a href="https://www.facebook.com/IonTabacaru.fotograf" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com/iontabacaru.fotograf/" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:tabacaruionion@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© 2025 · Chișinău, Moldova</span>
+  </footer>
+
+  <script src="/js/animations.js"></script>
+  <script src="/js/gallery.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
