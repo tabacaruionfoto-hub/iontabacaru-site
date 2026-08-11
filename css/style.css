@@ -25,6 +25,169 @@ a { color: inherit; text-decoration: none; }
 button { font-family: 'Inter', sans-serif; cursor: pointer; }
 ul { list-style: none; }
 
+/* ── BILINGV ─────────────────────────────────── */
+.lang-en {
+  display: inline-block;
+  font-size: 0.72em;
+  color: var(--muted);
+  opacity: 0.65;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  margin-left: 0.35em;
+}
+.lang-en::before {
+  content: "/ ";
+  opacity: 0.4;
+}
+/* Pe fundal închis, ajustează culoarea */
+.testimonials .lang-en,
+.p-card.featured .lang-en,
+.hero-content .lang-en {
+  color: rgba(240,236,230,0.55);
+  opacity: 0.6;
+}
+/* Eyebrow — engleza pe linie nouă, mai mică */
+.eyebrow .lang-en {
+  display: block;
+  margin-left: 0;
+  margin-top: 0.15rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+}
+.eyebrow .lang-en::before { content: none; }
+/* Blockquote — engleza pe linie nouă */
+.about-quote .lang-en {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+.about-quote .lang-en::before { content: none; }
+/* Contact title — engleza pe linie nouă */
+.contact-title .lang-en {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.55em;
+  opacity: 0.5;
+}
+.contact-title .lang-en::before { content: none; }
+/* Section title — engleza pe linie nouă */
+.section-title .lang-en {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.5em;
+  opacity: 0.55;
+}
+.section-title .lang-en::before { content: none; }
+/* Nav links — engleza mai subtilă */
+.nav-links a .lang-en {
+  font-size: 0.55rem;
+  display: block;
+  margin-left: 0;
+  margin-top: 0.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.nav-links a .lang-en::before { content: none; }
+/* Hero tag & city — engleza pe linie nouă */
+.hero-tag .lang-en,
+.hero-city .lang-en {
+  display: block;
+  margin-left: 0;
+  margin-top: 0.2rem;
+  font-size: 0.75em;
+  letter-spacing: 0.15em;
+  opacity: 0.45;
+}
+.hero-tag .lang-en::before,
+.hero-city .lang-en::before { content: none; }
+/* Pricing note — engleza pe linie nouă */
+.pricing-note .lang-en {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.85em;
+  opacity: 0.6;
+}
+.pricing-note .lang-en::before { content: none; }
+/* Testimonial detail — engleza inline */
+.testi-detail .lang-en {
+  font-size: 0.85em;
+  opacity: 0.5;
+}
+/* Gallery filters — engleza pe linie nouă */
+.gallery-filters button .lang-en {
+  display: block;
+  font-size: 0.55rem;
+  margin-left: 0;
+  margin-top: 0.1rem;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+}
+.gallery-filters button .lang-en::before { content: none; }
+/* Buttons — engleza pe linie nouă */
+.btn .lang-en {
+  display: block;
+  font-size: 0.7em;
+  margin-top: 0.15rem;
+  opacity: 0.55;
+  letter-spacing: 0.1em;
+}
+.btn .lang-en::before { content: none; }
+/* Badge text — engleza pe linie nouă */
+.badge-text .lang-en {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+.badge-text .lang-en::before { content: none; }
+/* Contact body — engleza pe linie nouă */
+.contact-body .lang-en {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.85em;
+  opacity: 0.55;
+}
+.contact-body .lang-en::before { content: none; }
+/* Form labels — engleza inline mică */
+.form-label .lang-en {
+  font-size: 0.75em;
+  opacity: 0.5;
+  margin-left: 0.2em;
+}
+.form-label .lang-en::before { content: none; }
+/* Pricing list — engleza pe linie nouă */
+.p-list li .lang-en {
+  display: block;
+  font-size: 0.82em;
+  opacity: 0.5;
+  margin-top: 0.1rem;
+}
+.p-list li .lang-en::before { content: none; }
+/* Featured badge — engleza pe linie nouă */
+.featured-badge .lang-en {
+  display: block;
+  font-size: 0.55rem;
+  margin-top: 0.05rem;
+  opacity: 0.7;
+}
+.featured-badge .lang-en::before { content: none; }
+/* Form success — engleza pe linie nouă */
+.form-success .lang-en {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+.form-success .lang-en::before { content: none; }
+
+/* ── STELUȚE OBLIGATORII ────────────────────── */
+.req {
+  color: var(--accent);
+  font-weight: 500;
+  margin-left: 0.15em;
+}
+
 /* ── TYPOGRAPHY ──────────────────────────────── */
 .eyebrow {
   font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;

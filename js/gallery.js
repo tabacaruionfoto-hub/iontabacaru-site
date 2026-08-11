@@ -117,10 +117,11 @@ function renderGallery(photos) {
 /* ── FILTRARE ────────────────────────────────────────────── */
 function applyFilter(filter) {
   currentFilter = filter;
-  document.querySelectorAll('.g-item').forEach(item => {
-    const visible = filter === 'all' || item.dataset.cat === filter;
-    item.classList.toggle('hidden', !visible);
-  });
+  const filtered = filter === 'all'
+    ? allPhotos
+    : allPhotos.filter(p => p.category === filter);
+  renderGallery(filtered);
+  setupFilters();
 }
 
 function setupFilters() {
