@@ -5,6 +5,30 @@
       "category": "portret",
       "width": 853,
       "height": 1258
+    },
+    {
+      "image": "/photos/photo_3_2026-08-12_11-10-08.jpg",
+      "category": "portret",
+      "width": 730,
+      "height": 1280
+    },
+    {
+      "image": "/photos/portret-1.jpg",
+      "category": "portret",
+      "width": 1024,
+      "height": 1280
+    },
+    {
+      "image": "/photos/portret-2.jpg",
+      "category": "portret",
+      "width": 848,
+      "height": 1280
+    },
+    {
+      "image": "/photos/portret-3.jpg",
+      "category": "portret",
+      "width": 1024,
+      "height": 1280
     }
   ]
 }
