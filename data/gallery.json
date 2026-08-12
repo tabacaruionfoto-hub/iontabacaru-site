@@ -29,6 +29,36 @@
       "category": "portret",
       "width": 1024,
       "height": 1280
+    },
+    {
+      "image": "/photos/nunta-1.jpg",
+      "category": "nunta",
+      "width": 820,
+      "height": 1280
+    },
+    {
+      "image": "/photos/nunta-2.jpg",
+      "category": "nunta",
+      "width": 853,
+      "height": 1280
+    },
+    {
+      "image": "/photos/nunta-3.jpg",
+      "category": "nunta",
+      "width": 853,
+      "height": 1280
+    },
+    {
+      "image": "/photos/nunta-4.jpg",
+      "category": "nunta",
+      "width": 853,
+      "height": 1280
+    },
+    {
+      "image": "/photos/nunta-5.jpg",
+      "category": "nunta",
+      "width": 886,
+      "height": 1252
     }
   ]
 }
