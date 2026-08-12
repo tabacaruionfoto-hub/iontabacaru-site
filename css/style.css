@@ -281,9 +281,12 @@ ul { list-style: none; }
 .about-body p + p { margin-top: 1rem; }
 .about-photo-wrap { position: relative; }
 .about-photo {
-  width: 100%; aspect-ratio: 3/4; border-radius: 1px;
-  /* ★ ÎNLOCUIEȘTE cu: background-image: url('/photos/ion.jpg'); background-size: cover; */
-  background: linear-gradient(155deg,#d4ccbe 0%,#bfb9ae 100%);
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 1px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .about-badge {
   position: absolute; bottom: -1.25rem; left: -1.75rem;
