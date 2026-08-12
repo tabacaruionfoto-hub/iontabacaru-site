@@ -59,6 +59,36 @@
       "category": "nunta",
       "width": 886,
       "height": 1252
+    },
+    {
+      "image": "/photos/nunta-6.jpg",
+      "category": "nunta",
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "image": "/photos/familie-1.jpg",
+      "category": "familie",
+      "width": 853,
+      "height": 1271
+    },
+    {
+      "image": "/photos/familie-2.jpg",
+      "category": "familie",
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "image": "/photos/familie-3.jpg",
+      "category": "familie",
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "image": "/photos/cuplu-1.jpg",
+      "category": "cuplu",
+      "width": 798,
+      "height": 1280
     }
   ]
 }
