@@ -31,6 +31,12 @@
       "height": 1280
     },
     {
+      "category": "cuplu",
+      "image": "/photos/img_20260814_113136_859.jpg",
+      "width": 4000,
+      "height": 5992
+    },
+    {
       "image": "/photos/portret-1.jpg",
       "category": "portret",
       "width": 1024,
@@ -47,6 +53,12 @@
       "category": "familie",
       "width": 1280,
       "height": 853
+    },
+    {
+      "image": "/photos/img_20260814_113250_214.jpg",
+      "category": "cuplu",
+      "width": 4000,
+      "height": 6001
     },
     {
       "image": "/photos/portret-2.jpg",
@@ -89,6 +101,12 @@
       "category": "nunta",
       "width": 1280,
       "height": 853
+    },
+    {
+      "image": "/photos/img_20260814_113401_397.jpg",
+      "category": "cuplu",
+      "width": 4000,
+      "height": 6000
     }
   ]
 }
