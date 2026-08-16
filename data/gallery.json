@@ -97,16 +97,16 @@
       "height": 1252
     },
     {
-      "image": "/photos/familie-1.jpg",
-      "category": "familie",
-      "width": 853,
-      "height": 1271
-    },
-    {
       "image": "/photos/nunta-6.jpg",
       "category": "nunta",
       "width": 1280,
       "height": 853
+    },
+    {
+      "image": "/photos/familie-1.jpg",
+      "category": "familie",
+      "width": 853,
+      "height": 1271
     },
     {
       "image": "/photos/img_20260814_113401_397.jpg",
